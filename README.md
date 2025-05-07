@@ -3,7 +3,7 @@
 ## Setting Up the Project
 
 To run the project successfully, follow the steps below.  
-All terminal commands are written for **Git Bash** (installed with Git on Windows), but will also work in standard command lines (CMD, PowerShell, or VS Code terminal) if Python is properly configured.
+All terminal commands are written for **Git Bash** (installed with Git on Windows), but will also work in standard command lines (CMD, PowerShell, or VS Code terminal) if Python and Git is properly configured.
 
 ---
 
