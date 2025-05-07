@@ -2,8 +2,9 @@
 
 
 ## Setting Up the Project
+
 To run the project successfully, follow the steps below.  
-All terminal commands are written for **Git Bash** (installed with Git on Windows), but will also work in standard command lines (CMD, PowerShell, or VS Code terminal) if Python and Git is properly configured.
+All terminal commands are written for **Git Bash** (installed with Git on Windows), but will also work in standard terminals (CMD, PowerShell, or VS Code Terminal) if both **Python** and **Git** are properly configured.
 
 ---
 
@@ -13,63 +14,71 @@ Open Git Bash (or your terminal of choice) and run:
 
 ```bash
 git clone https://github.com/EvyatarChaimoff/MNIST-USER_DRAWING-CNN-SVM-Classifier.git
-```
-Then:
-```
 cd MNIST-USER_DRAWING-CNN-SVM-Classifier
 ```
 
 ---
 
-### Step 2: Extract Required Files (Not through the terminal)
+### Step 2: Extract Required Files *(Manual step – not through the terminal)*
 
-The repository includes compressed files (`.rar`) that must be extracted before running the project.
+The repository includes compressed `.rar` files that must be extracted before running the project.
 
 #### 2.1 Extract the Trained Models
-Locate `Models.rar` in the following path:
+Locate the file:
 ```
 MNIST-USER_DRAWING-CNN-SVM-Classifier/Models/Models.rar
 ```
-Use **WinRAR** or **7-Zip** to right-click and choose:
-> **Extract Here**  
-This will generate model files like `cnn_best_model.pth` in the `Models/` directory.
+
+Right-click on `Models.rar` and choose:  
+> **Extract Here** (using WinRAR or 7-Zip)
+
+This will extract model files (e.g., `cnn_best_model.pth`) into the `Models/` folder.
 
 #### 2.2 Extract the Data
-Locate `data.rar` in:
+Locate the file:
 ```
 MNIST-USER_DRAWING-CNN-SVM-Classifier/data/data.rar
 ```
-Again, right-click → **Extract Here**  
-This will extract `.npy` files such as `X_train.npy`, `y_train.npy` into the `data/` directory.
 
-> Make sure the `Scalers/` folder (used for normalization) also exists. If missing, it may be included within the `Models.rar` or provided separately.
+Right-click on `data.rar` and choose:  
+> **Extract Here**
+
+This will extract NumPy data files such as `X_train.npy`, `y_train.npy` into the `data/` folder.
+
+> Make sure the `Scalers/` folder (used for normalization) also exists. If it's missing, it may be included inside `Models.rar` or provided separately.
 
 ---
 
-### Step 3: Install Python Dependencies (In terminal)
+### Step 3: Install Python Dependencies *(in the terminal)*
 
-Run the following command inside the project directory:
+Run the following command from inside the project folder:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-This will install all the necessary libraries for running the project (e.g., PyTorch, scikit-learn, matplotlib, Pillow, OpenCV).
+This will install all the necessary Python libraries for running the project, including:
+- PyTorch
+- scikit-learn
+- matplotlib
+- Pillow
+- OpenCV
+- tqdm
 
 ---
 
 ### Step 4: Run the Main Application
 
-Launch the main menu by running from terminal using:
+To launch the main menu, run:
 
 ```bash
 python ML_Project.py
 ```
 
-A textual menu will appear, offering options such as:
+You will see a menu with the following options:
 - Train/Test CNN and SVM models
-- Launch GUI for digit drawing and classification
-- View plots and saved metrics
+- Launch GUI for drawing and predicting digits
+- View plots, confusion matrices, and metrics
 
 ---
 
