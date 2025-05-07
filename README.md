@@ -1,19 +1,84 @@
 # MNIST and User Digit Drawing Classification using CNN and SVM
 
-## Setting the files
+## Setting Up the Project
 
-In order to get the project running, you will need to download the following items:
+To run the project successfully, follow the steps below.  
+All terminal commands are written for **Git Bash** (installed with Git on Windows), but will also work in standard command lines (CMD, PowerShell, or VS Code terminal) if Python is properly configured.
 
-1. **Models** (provided as `Models.rar`)
-2. **Scalers** (provided as part of the models)
-3. **Data** (provided as `data.rar`)
+---
 
-- **Extract** the contents of `Models.rar` into the `Models/` directory.
-- **Extract** the contents of `data.rar` into the `data/` directory.
+### Step 1: Clone the Repository
 
-**Download** all the Python source files and set `ML_Project.py` as the main file to run the project.
+Open Git Bash (or your terminal of choice) and run:
 
-Finally, run the following line in your terminal `pip install -r requirements.txt`
+```bash
+git clone https://github.com/EvyatarChaimoff/MNIST-USER_DRAWING-CNN-SVM-Classifier.git
+cd MNIST-USER_DRAWING-CNN-SVM-Classifier
+```
+
+---
+
+### Step 2: Extract Required Files
+
+The repository includes compressed files (`.rar`) that must be extracted before running the project.
+
+#### 2.1 Extract the Trained Models
+Locate `Models.rar` in the following path:
+```
+MNIST-USER_DRAWING-CNN-SVM-Classifier/Models/Models.rar
+```
+Use **WinRAR** or **7-Zip** to right-click and choose:
+> **Extract Here**  
+This will generate model files like `cnn_best_model.pth` in the `Models/` directory.
+
+#### 2.2 Extract the Data
+Locate `data.rar` in:
+```
+MNIST-USER_DRAWING-CNN-SVM-Classifier/data/data.rar
+```
+Again, right-click → **Extract Here**  
+This will extract `.npy` files such as `X_train.npy`, `y_train.npy` into the `data/` directory.
+
+> Make sure the `Scalers/` folder (used for normalization) also exists. If missing, it may be included within the `Models.rar` or provided separately.
+
+---
+
+### Step 3: Install Python Dependencies
+
+Run the following command inside the project directory:
+
+```bash
+pip install -r requirements.txt
+```
+
+This will install all the necessary libraries for running the project (e.g., PyTorch, scikit-learn, matplotlib, Pillow, OpenCV).
+
+---
+
+### Step 4: Run the Main Application
+
+Launch the main menu by running:
+
+```bash
+python ML_Project.py
+```
+
+A textual menu will appear, offering options such as:
+- Train/Test CNN and SVM models
+- Launch GUI for digit drawing and classification
+- View plots and saved metrics
+
+---
+
+### Pro Tip:
+If you use **Visual Studio Code**, you can open the entire project folder using:
+
+```bash
+code .
+```
+
+And run/edit any script from there easily.
+
 
 
 ## Introduction
