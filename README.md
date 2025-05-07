@@ -13,6 +13,9 @@ Open Git Bash (or your terminal of choice) and run:
 
 ```bash
 git clone https://github.com/EvyatarChaimoff/MNIST-USER_DRAWING-CNN-SVM-Classifier.git
+```
+Then:
+```
 cd MNIST-USER_DRAWING-CNN-SVM-Classifier
 ```
 
