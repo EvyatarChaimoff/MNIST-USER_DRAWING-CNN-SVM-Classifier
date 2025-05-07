@@ -21,7 +21,7 @@ cd MNIST-USER_DRAWING-CNN-SVM-Classifier
 
 ---
 
-### Step 2: Extract Required Files
+### Step 2: Extract Required Files (Not through the terminal)
 
 The repository includes compressed files (`.rar`) that must be extracted before running the project.
 
@@ -46,7 +46,7 @@ This will extract `.npy` files such as `X_train.npy`, `y_train.npy` into the `da
 
 ---
 
-### Step 3: Install Python Dependencies
+### Step 3: Install Python Dependencies (In terminal)
 
 Run the following command inside the project directory:
 
@@ -60,7 +60,7 @@ This will install all the necessary libraries for running the project (e.g., PyT
 
 ### Step 4: Run the Main Application
 
-Launch the main menu by running:
+Launch the main menu by running from terminal using:
 
 ```bash
 python ML_Project.py
