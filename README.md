@@ -70,17 +70,6 @@ A textual menu will appear, offering options such as:
 
 ---
 
-### Pro Tip:
-If you use **Visual Studio Code**, you can open the entire project folder using:
-
-```bash
-code .
-```
-
-And run/edit any script from there easily.
-
-
-
 ## Introduction
 This project focuses on the classification of handwritten digits using two different machine learning approaches: a Convolutional Neural Network (CNN) and a Support Vector Machine (SVM).
 
