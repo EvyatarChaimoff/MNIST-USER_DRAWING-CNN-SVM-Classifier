@@ -21,7 +21,7 @@ def main():
         print("Loaded data from data_numpy/")
     else:
         train_imgs, train_lbls, dev_imgs, dev_lbls, test_imgs, test_lbls = prepration()
-
+    #Menu
     while True:
         print("\nMenu:")
         print("1. Train CNN")
